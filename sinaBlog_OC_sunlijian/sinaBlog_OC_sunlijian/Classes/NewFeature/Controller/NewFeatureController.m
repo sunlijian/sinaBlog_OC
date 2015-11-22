@@ -7,6 +7,7 @@
 //
 
 #import "NewFeatureController.h"
+#import "AppDelegate.h"
 #define kButtonMargin 10
 @interface NewFeatureController ()<UIScrollViewDelegate>
 
@@ -98,7 +99,9 @@
 
 #pragma mark - button 的点击
 - (void)clickEnterButton{
-
+    AppDelegate *appdelegate = [UIApplication sharedApplication].delegate;
+    UIWindow *window = appdelegate.window;
+    window.rootViewController = [appdelegate switchController];
 }
 - (void)clickShareButton:(UIButton *)button{
     button.selected = !button.selected;

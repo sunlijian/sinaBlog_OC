@@ -12,6 +12,8 @@
 #import "NewFeatureController.h"
 #import "WelcomController.h"
 #import "HomeTableViewController.h"
+#import "AccountTool.h"
+#import "Account.h"
 @interface AppDelegate ()
 
 @end
@@ -24,12 +26,48 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[WelcomController alloc]init];
+    //新版本
+    BOOL newVersion = [self hasNewVersion];
+    
+    if (newVersion) {
+        self.window.rootViewController = [[NewFeatureController alloc]init];
+    }else{
+        self.window.rootViewController = [self switchController];
+    }
     
     [self.window makeKeyAndVisible];
     
     return YES;
 }
+#pragma mark - 是否登陆过或过期
+- (UIViewController *)switchController{
+    Account *account = [AccountTool loadAccount];
+    if (account) {
+        return [[WelcomController alloc]init];
+    }else{
+        return [[OAthViewController alloc]init];
+    }
+}
+
+
+#pragma mark - 是否有新版本
+- (BOOL)hasNewVersion{
+    //保存的版本
+    NSString *keyVersion = @"keyVersion";
+    NSString *localVersion = [[NSUserDefaults standardUserDefaults] objectForKey:keyVersion];
+    //当前版本
+    NSString *appVersion = [NSBundle mainBundle].infoDictionary[@"CFBundleShortVersionString"];
+    [[NSUserDefaults standardUserDefaults] setObject:appVersion forKey:keyVersion];
+    
+    //进行判断
+    if ([appVersion compare:localVersion] == NSOrderedDescending) {
+        return YES;
+    }else{
+        return NO;
+    }
+    
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
