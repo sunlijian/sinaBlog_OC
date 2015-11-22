@@ -9,6 +9,7 @@
 #import "AppDelegate.h"
 #import "PublicTarBarController.h"
 #import "OAthViewController.h"
+#import "NewFeatureController.h"
 @interface AppDelegate ()
 
 @end
@@ -21,7 +22,7 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[OAthViewController alloc]init];
+    self.window.rootViewController = [[NewFeatureController alloc]init];
     
     [self.window makeKeyAndVisible];
     
