@@ -7,26 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		18056A061C00912800F83750 /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18056A051C00912800F83750 /* PopMenuView.m */; settings = {ASSET_TAGS = (); }; };
-		180E9D781C00D5D8008888FB /* PopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E9D771C00D5D8008888FB /* PopTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
-		187D741B1C00BF30009EA944 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D741A1C00BF30009EA944 /* PopViewController.m */; settings = {ASSET_TAGS = (); }; };
+		18056A061C00912800F83750 /* PopMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 18056A051C00912800F83750 /* PopMenuView.m */; };
+		180E9D781C00D5D8008888FB /* PopTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 180E9D771C00D5D8008888FB /* PopTableViewCell.m */; };
+		187D741B1C00BF30009EA944 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 187D741A1C00BF30009EA944 /* PopViewController.m */; };
 		1881B72F1C00333300FCFA70 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B72E1C00333300FCFA70 /* main.m */; };
 		1881B7321C00333300FCFA70 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7311C00333300FCFA70 /* AppDelegate.m */; };
 		1881B73A1C00333300FCFA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1881B7391C00333300FCFA70 /* Assets.xcassets */; };
 		1881B7481C00333300FCFA70 /* sinaBlog_OC_sunlijianTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7471C00333300FCFA70 /* sinaBlog_OC_sunlijianTests.m */; };
 		1881B7531C00333300FCFA70 /* sinaBlog_OC_sunlijianUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7521C00333300FCFA70 /* sinaBlog_OC_sunlijianUITests.m */; };
-		1881B7781C00349300FCFA70 /* PublicTarBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7771C00349300FCFA70 /* PublicTarBarController.m */; settings = {ASSET_TAGS = (); }; };
-		1881B77B1C0034AF00FCFA70 /* PublicNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B77A1C0034AF00FCFA70 /* PublicNavController.m */; settings = {ASSET_TAGS = (); }; };
-		1881B77E1C0034D400FCFA70 /* PublicTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B77D1C0034D400FCFA70 /* PublicTabBar.m */; settings = {ASSET_TAGS = (); }; };
-		1881B7811C0034EE00FCFA70 /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7801C0034EE00FCFA70 /* ProfileTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		1881B7841C00350000FCFA70 /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7831C00350000FCFA70 /* MessageTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		1881B7871C00350C00FCFA70 /* DiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7861C00350C00FCFA70 /* DiscoverTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		1881B78A1C00351B00FCFA70 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7891C00351B00FCFA70 /* HomeTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		1881B78D1C003E7A00FCFA70 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B78C1C003E7A00FCFA70 /* UIView+frame.m */; settings = {ASSET_TAGS = (); }; };
-		18A390461C017B6000F13507 /* OAthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390451C017B6000F13507 /* OAthViewController.m */; settings = {ASSET_TAGS = (); }; };
-		18CFBC311C006E0A00EE5C4A /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC301C006E0A00EE5C4A /* UIBarButtonItem+Extension.m */; settings = {ASSET_TAGS = (); }; };
-		18CFBC351C0073DD00EE5C4A /* TempTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC341C0073DD00EE5C4A /* TempTableViewController.m */; settings = {ASSET_TAGS = (); }; };
-		18CFBC381C00808C00EE5C4A /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC371C00808C00EE5C4A /* TitleButton.m */; settings = {ASSET_TAGS = (); }; };
+		1881B7781C00349300FCFA70 /* PublicTarBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7771C00349300FCFA70 /* PublicTarBarController.m */; };
+		1881B77B1C0034AF00FCFA70 /* PublicNavController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B77A1C0034AF00FCFA70 /* PublicNavController.m */; };
+		1881B77E1C0034D400FCFA70 /* PublicTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B77D1C0034D400FCFA70 /* PublicTabBar.m */; };
+		1881B7811C0034EE00FCFA70 /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7801C0034EE00FCFA70 /* ProfileTableViewController.m */; };
+		1881B7841C00350000FCFA70 /* MessageTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7831C00350000FCFA70 /* MessageTableViewController.m */; };
+		1881B7871C00350C00FCFA70 /* DiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7861C00350C00FCFA70 /* DiscoverTableViewController.m */; };
+		1881B78A1C00351B00FCFA70 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7891C00351B00FCFA70 /* HomeTableViewController.m */; };
+		1881B78D1C003E7A00FCFA70 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B78C1C003E7A00FCFA70 /* UIView+frame.m */; };
+		18A390461C017B6000F13507 /* OAthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390451C017B6000F13507 /* OAthViewController.m */; };
+		18CFBC311C006E0A00EE5C4A /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC301C006E0A00EE5C4A /* UIBarButtonItem+Extension.m */; };
+		18CFBC351C0073DD00EE5C4A /* TempTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC341C0073DD00EE5C4A /* TempTableViewController.m */; };
+		18CFBC381C00808C00EE5C4A /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC371C00808C00EE5C4A /* TitleButton.m */; };
+		42E1B13859B11ABE6CC8237B /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A878E1FC64285784559032A5 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,9 @@
 		18CFBC341C0073DD00EE5C4A /* TempTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempTableViewController.m; sourceTree = "<group>"; };
 		18CFBC361C00808C00EE5C4A /* TitleButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TitleButton.h; sourceTree = "<group>"; };
 		18CFBC371C00808C00EE5C4A /* TitleButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TitleButton.m; sourceTree = "<group>"; };
+		2E0B57326EDCF871E6026872 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		908F4298D82E96746FC71425 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		A878E1FC64285784559032A5 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42E1B13859B11ABE6CC8237B /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +129,8 @@
 				1881B7461C00333300FCFA70 /* sinaBlog_OC_sunlijianTests */,
 				1881B7511C00333300FCFA70 /* sinaBlog_OC_sunlijianUITests */,
 				1881B72B1C00333300FCFA70 /* Products */,
+				39D5EDBCCF46392ACB863FB2 /* Pods */,
+				40CFE3AAD400C190F70AD6E5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -422,6 +429,23 @@
 			path = temp;
 			sourceTree = "<group>";
 		};
+		39D5EDBCCF46392ACB863FB2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E0B57326EDCF871E6026872 /* Pods.debug.xcconfig */,
+				908F4298D82E96746FC71425 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		40CFE3AAD400C190F70AD6E5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A878E1FC64285784559032A5 /* Pods.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -429,9 +453,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1881B7571C00333300FCFA70 /* Build configuration list for PBXNativeTarget "sinaBlog_OC_sunlijian" */;
 			buildPhases = (
+				0CCD64AF133F148A4FD6C0F9 /* Check Pods Manifest.lock */,
 				1881B7261C00333300FCFA70 /* Sources */,
 				1881B7271C00333300FCFA70 /* Frameworks */,
 				1881B7281C00333300FCFA70 /* Resources */,
+				3DC501988BF4C1BF52A36F0B /* Embed Pods Frameworks */,
+				407164235151C54206103594 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -547,6 +574,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0CCD64AF133F148A4FD6C0F9 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3DC501988BF4C1BF52A36F0B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		407164235151C54206103594 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1881B7261C00333300FCFA70 /* Sources */ = {
@@ -691,6 +766,7 @@
 		};
 		1881B7581C00333300FCFA70 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E0B57326EDCF871E6026872 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -706,6 +782,7 @@
 		};
 		1881B7591C00333300FCFA70 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 908F4298D82E96746FC71425 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
