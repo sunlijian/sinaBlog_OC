@@ -27,6 +27,7 @@
 		18A390491C01997700F13507 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390481C01997700F13507 /* Account.m */; settings = {ASSET_TAGS = (); }; };
 		18A3904C1C019FCE00F13507 /* AccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3904B1C019FCE00F13507 /* AccountTool.m */; settings = {ASSET_TAGS = (); }; };
 		18A390511C01A7CC00F13507 /* NewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390501C01A7CC00F13507 /* NewFeatureController.m */; settings = {ASSET_TAGS = (); }; };
+		18BD1AAD1C01BE84007FF45B /* WelcomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1AAC1C01BE84007FF45B /* WelcomController.m */; settings = {ASSET_TAGS = (); }; };
 		18CFBC311C006E0A00EE5C4A /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC301C006E0A00EE5C4A /* UIBarButtonItem+Extension.m */; };
 		18CFBC351C0073DD00EE5C4A /* TempTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC341C0073DD00EE5C4A /* TempTableViewController.m */; };
 		18CFBC381C00808C00EE5C4A /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC371C00808C00EE5C4A /* TitleButton.m */; };
@@ -93,6 +94,8 @@
 		18A3904B1C019FCE00F13507 /* AccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTool.m; sourceTree = "<group>"; };
 		18A3904F1C01A7CC00F13507 /* NewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFeatureController.h; sourceTree = "<group>"; };
 		18A390501C01A7CC00F13507 /* NewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFeatureController.m; sourceTree = "<group>"; };
+		18BD1AAB1C01BE84007FF45B /* WelcomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomController.h; sourceTree = "<group>"; };
+		18BD1AAC1C01BE84007FF45B /* WelcomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomController.m; sourceTree = "<group>"; };
 		18CFBC2E1C00475000EE5C4A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18CFBC2F1C006E0A00EE5C4A /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		18CFBC301C006E0A00EE5C4A /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
@@ -193,6 +196,7 @@
 		1881B7601C00342F00FCFA70 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				18BD1AA91C01BE6C007FF45B /* Welcom */,
 				18A3904D1C01A7A600F13507 /* NewFeature */,
 				18A390401C017B1500F13507 /* OAth */,
 				1881B7651C00342F00FCFA70 /* Home */,
@@ -451,6 +455,23 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		18BD1AA91C01BE6C007FF45B /* Welcom */ = {
+			isa = PBXGroup;
+			children = (
+				18BD1AAA1C01BE6C007FF45B /* Controller */,
+			);
+			path = Welcom;
+			sourceTree = "<group>";
+		};
+		18BD1AAA1C01BE6C007FF45B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				18BD1AAB1C01BE84007FF45B /* WelcomController.h */,
+				18BD1AAC1C01BE84007FF45B /* WelcomController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		18CFBC321C00739400EE5C4A /* temp */ = {
 			isa = PBXGroup;
 			children = (
@@ -674,6 +695,7 @@
 				1881B7781C00349300FCFA70 /* PublicTarBarController.m in Sources */,
 				18A390461C017B6000F13507 /* OAthViewController.m in Sources */,
 				187D741B1C00BF30009EA944 /* PopViewController.m in Sources */,
+				18BD1AAD1C01BE84007FF45B /* WelcomController.m in Sources */,
 				1881B7871C00350C00FCFA70 /* DiscoverTableViewController.m in Sources */,
 				1881B78D1C003E7A00FCFA70 /* UIView+frame.m in Sources */,
 				1881B72F1C00333300FCFA70 /* main.m in Sources */,

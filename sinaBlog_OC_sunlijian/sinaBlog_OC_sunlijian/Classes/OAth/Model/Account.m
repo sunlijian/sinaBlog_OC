@@ -14,26 +14,30 @@
 #pragma mark - 获取当前的时间
 - (void)setAccess_token:(NSString *)access_token{
     _access_token = access_token;
-    _createDate = [NSDate date];
+    self.createDate = [NSDate date];
 }
 
 
 #pragma mark - 归档
 - (void)encodeWithCoder:(NSCoder *)aCoder{
-    [aCoder encodeObject:_access_token forKey:@"access_token"];
-    [aCoder encodeObject:_expires_in forKey:@"expires_in"];
-    [aCoder encodeObject:_remind_in forKey:@"remind_in"];
-    [aCoder encodeObject:_uid forKey:@"uid"];
-    [aCoder encodeObject:_createDate forKey:@"createDate"];
+    [aCoder encodeObject:self.access_token forKey:@"access_token"];
+    [aCoder encodeObject:self.expires_in forKey:@"expires_in"];
+    [aCoder encodeObject:self.remind_in forKey:@"remind_in"];
+    [aCoder encodeObject:self.uid forKey:@"uid"];
+    [aCoder encodeObject:self.createDate forKey:@"createDate"];
+    [aCoder encodeObject:self.name forKey:@"name"];
+    [aCoder encodeObject:self.avatar_large forKey:@"avatar_large"];
 }
 #pragma mark - 解档
 - (instancetype)initWithCoder:(NSCoder *)aDecoder{
     if (self = [super init]) {
-        _access_token = [aDecoder decodeObjectForKey:@"access_token"];
-        _expires_in = [aDecoder decodeObjectForKey:@"expires_in"];
-        _remind_in = [aDecoder decodeObjectForKey:@"remind_in"];
-        _uid = [aDecoder decodeObjectForKey:@"uid"];
-        _createDate = [aDecoder decodeObjectForKey:@"createDate"];
+        self.access_token = [aDecoder decodeObjectForKey:@"access_token"];
+        self.expires_in = [aDecoder decodeObjectForKey:@"expires_in"];
+        self.remind_in = [aDecoder decodeObjectForKey:@"remind_in"];
+        self.uid = [aDecoder decodeObjectForKey:@"uid"];
+        self.createDate = [aDecoder decodeObjectForKey:@"createDate"];
+        self.name = [aDecoder decodeObjectForKey:@"name"];
+        self.avatar_large = [aDecoder decodeObjectForKey:@"avatar_large"];
     }
     return self;
 }

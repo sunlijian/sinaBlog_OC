@@ -15,4 +15,7 @@
 //保存信息
 + (void)saveAccount:(Account *)account;
 
+//获取用户信息
++ (Account *)loadAccount;
+
 @end

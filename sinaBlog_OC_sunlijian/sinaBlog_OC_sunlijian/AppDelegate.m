@@ -10,6 +10,8 @@
 #import "PublicTarBarController.h"
 #import "OAthViewController.h"
 #import "NewFeatureController.h"
+#import "WelcomController.h"
+#import "HomeTableViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -22,7 +24,7 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[NewFeatureController alloc]init];
+    self.window.rootViewController = [[WelcomController alloc]init];
     
     [self.window makeKeyAndVisible];
     

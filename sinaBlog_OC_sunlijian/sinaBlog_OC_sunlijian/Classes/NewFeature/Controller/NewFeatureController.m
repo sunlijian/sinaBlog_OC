@@ -21,6 +21,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    
     _scrollView = [[UIScrollView alloc]initWithFrame:self.view.bounds];
     //设置 scrollView
     _scrollView.showsHorizontalScrollIndicator = NO;
@@ -109,5 +111,8 @@
     _pageControl.currentPage = page;
 }
 
+- (BOOL)prefersStatusBarHidden{
+    return YES;
+}
 
 @end

@@ -18,4 +18,8 @@
 //当前获取 的时间
 @property (nonatomic, strong) NSDate *createDate;
 
+//用户的头像和名字
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *avatar_large;
+
 @end

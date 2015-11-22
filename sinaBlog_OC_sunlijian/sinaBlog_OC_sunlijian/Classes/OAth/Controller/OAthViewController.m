@@ -13,6 +13,8 @@
 #import "AccountTool.h"
 #import "PublicTarBarController.h"
 #import "AppDelegate.h"
+#import "WelcomController.h"
+#import "SVProgressHUD.h"
 /*
  App Key：1406639177
  App Secret：afb3c27002f5992323d305c5318c78fd
@@ -73,7 +75,7 @@
 #pragma mark - 获取 accessToken
 - (void)getAccessTokenWithCode:(NSString *)code{
     //获取 http 请求管理者
-    AFHTTPRequestOperationManager *mgr = [AFHTTPRequestOperationManager manager];
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
     //请求地址
     NSString *urlStr = @"https://api.weibo.com/oauth2/access_token";
     //拼接参数
@@ -87,9 +89,9 @@
     //给返回数据的解析器添加一个类型
     mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/plain", nil];
     
-    [mgr POST:urlStr parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
+    [mgr POST:urlStr parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
         //
-        NSLog(@"%@", responseObject);
+//        NSLog(@"%@", responseObject);
         /*
          "access_token" = "2.00ZVSNCDfGHMXBe9a861e0edHJu78C";
          "expires_in" = 157679999;
@@ -99,21 +101,54 @@
         //字典转模型
         Account *account = [[Account alloc]init];
         [account setValuesForKeysWithDictionary:responseObject];
-        //保存帐号信息
-        [AccountTool saveAccount:account];
-        
-        //跳到主页
-        PublicTarBarController *public = [[PublicTarBarController alloc]init];
-        //设置为根控制器
-        AppDelegate *appdelegate = [UIApplication sharedApplication].delegate;
-        UIWindow *window = appdelegate.window;
-        window.rootViewController = public;
-        
-    } failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
+        //保存账号信息前获取个人信息
+        [self loadUserInfoWithAccount: account];
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         //
+        [SVProgressHUD dismiss];
     }];
 }
 
+#pragma mark - 获取个人信息
+- (void)loadUserInfoWithAccount:(Account *)account{
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/plain", nil];
+    //请求地址
+    NSString *urlStr = @"https://api.weibo.com/2/users/show.json";
+    //参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"access_token"] = account.access_token;
+    params[@"uid"] = account.uid;
+    //开始请求
+    [mgr GET:urlStr parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        //
+        NSLog(@"%@", responseObject);
+        account.name = responseObject[@"name"];
+        account.avatar_large = responseObject[@"avatar_large"];
+        //保存帐号信息
+        [AccountTool saveAccount:account];
+        //成功弹窗
+        [SVProgressHUD dismiss];
+        //跳到欢迎页
+        WelcomController *welcomVC = [[WelcomController alloc]init];
+        //设置为根控制器
+        AppDelegate *appdelegate = [UIApplication sharedApplication].delegate;
+        UIWindow *window = appdelegate.window;
+        window.rootViewController = welcomVC;
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        //失败弹窗
+        [SVProgressHUD dismiss];
+    }];
+    
+}
+
+- (void)webViewDidStartLoad:(UIWebView *)webView{
+    [SVProgressHUD show];
+}
+- (void)webViewDidFinishLoad:(UIWebView *)webView{
+    [SVProgressHUD dismiss];
+}
 
 
 
