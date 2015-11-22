@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PublicTarBarController.h"
+#import "OAthViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -20,7 +21,7 @@
     
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
-    self.window.rootViewController = [[PublicTarBarController alloc]init];
+    self.window.rootViewController = [[OAthViewController alloc]init];
     
     [self.window makeKeyAndVisible];
     
