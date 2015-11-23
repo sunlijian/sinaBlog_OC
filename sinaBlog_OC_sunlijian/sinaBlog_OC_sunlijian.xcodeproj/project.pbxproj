@@ -26,6 +26,10 @@
 		188D34F21C02B9E700376A86 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D34F11C02B9E700376A86 /* SearchBar.m */; settings = {ASSET_TAGS = (); }; };
 		188D34F41C02BA5300376A86 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188D34F31C02BA5300376A86 /* SearchView.xib */; settings = {ASSET_TAGS = (); }; };
 		188D34FC1C02CEDE00376A86 /* ComposeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D34FB1C02CEDE00376A86 /* ComposeView.m */; settings = {ASSET_TAGS = (); }; };
+		188D34FF1C02F36800376A86 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D34FE1C02F36800376A86 /* UIImage+ImageEffects.m */; settings = {ASSET_TAGS = (); }; };
+		188D35011C02F99200376A86 /* compose.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188D35001C02F99200376A86 /* compose.plist */; settings = {ASSET_TAGS = (); }; };
+		188D35041C02FA2500376A86 /* ComposeButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35031C02FA2500376A86 /* ComposeButtonModel.m */; settings = {ASSET_TAGS = (); }; };
+		188D35071C02FF1C00376A86 /* ComposeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35061C02FF1C00376A86 /* ComposeButton.m */; settings = {ASSET_TAGS = (); }; };
 		18A390461C017B6000F13507 /* OAthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390451C017B6000F13507 /* OAthViewController.m */; };
 		18A390491C01997700F13507 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390481C01997700F13507 /* Account.m */; settings = {ASSET_TAGS = (); }; };
 		18A3904C1C019FCE00F13507 /* AccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3904B1C019FCE00F13507 /* AccountTool.m */; settings = {ASSET_TAGS = (); }; };
@@ -95,6 +99,13 @@
 		188D34F31C02BA5300376A86 /* SearchView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchView.xib; sourceTree = "<group>"; };
 		188D34FA1C02CEDE00376A86 /* ComposeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeView.h; sourceTree = "<group>"; };
 		188D34FB1C02CEDE00376A86 /* ComposeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeView.m; sourceTree = "<group>"; };
+		188D34FD1C02F36800376A86 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		188D34FE1C02F36800376A86 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		188D35001C02F99200376A86 /* compose.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = compose.plist; sourceTree = "<group>"; };
+		188D35021C02FA2500376A86 /* ComposeButtonModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeButtonModel.h; sourceTree = "<group>"; };
+		188D35031C02FA2500376A86 /* ComposeButtonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeButtonModel.m; sourceTree = "<group>"; };
+		188D35051C02FF1C00376A86 /* ComposeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeButton.h; sourceTree = "<group>"; };
+		188D35061C02FF1C00376A86 /* ComposeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeButton.m; sourceTree = "<group>"; };
 		18A390441C017B6000F13507 /* OAthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAthViewController.h; sourceTree = "<group>"; };
 		18A390451C017B6000F13507 /* OAthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAthViewController.m; sourceTree = "<group>"; };
 		18A390471C01997700F13507 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
@@ -172,6 +183,7 @@
 			children = (
 				1881B7601C00342F00FCFA70 /* Classes */,
 				1881B73E1C00333300FCFA70 /* Info.plist */,
+				188D35001C02F99200376A86 /* compose.plist */,
 				1881B72D1C00333300FCFA70 /* Supporting Files */,
 				18CFBC2E1C00475000EE5C4A /* PrefixHeader.pch */,
 			);
@@ -374,6 +386,8 @@
 		1881B7721C00342F00FCFA70 /* Categroy */ = {
 			isa = PBXGroup;
 			children = (
+				188D34FD1C02F36800376A86 /* UIImage+ImageEffects.h */,
+				188D34FE1C02F36800376A86 /* UIImage+ImageEffects.m */,
 				1881B78B1C003E7A00FCFA70 /* UIView+frame.h */,
 				1881B78C1C003E7A00FCFA70 /* UIView+frame.m */,
 				18CFBC2F1C006E0A00EE5C4A /* UIBarButtonItem+Extension.h */,
@@ -438,6 +452,8 @@
 		188D34F71C02CEA200376A86 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				188D35021C02FA2500376A86 /* ComposeButtonModel.h */,
+				188D35031C02FA2500376A86 /* ComposeButtonModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -454,6 +470,8 @@
 			children = (
 				188D34FA1C02CEDE00376A86 /* ComposeView.h */,
 				188D34FB1C02CEDE00376A86 /* ComposeView.m */,
+				188D35051C02FF1C00376A86 /* ComposeButton.h */,
+				188D35061C02FF1C00376A86 /* ComposeButton.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -675,6 +693,7 @@
 			files = (
 				188D34F41C02BA5300376A86 /* SearchView.xib in Resources */,
 				1881B73A1C00333300FCFA70 /* Assets.xcassets in Resources */,
+				188D35011C02F99200376A86 /* compose.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -753,6 +772,7 @@
 				1881B77B1C0034AF00FCFA70 /* PublicNavController.m in Sources */,
 				1881B7321C00333300FCFA70 /* AppDelegate.m in Sources */,
 				1881B78A1C00351B00FCFA70 /* HomeTableViewController.m in Sources */,
+				188D34FF1C02F36800376A86 /* UIImage+ImageEffects.m in Sources */,
 				18A390491C01997700F13507 /* Account.m in Sources */,
 				18CFBC351C0073DD00EE5C4A /* TempTableViewController.m in Sources */,
 				1881B7811C0034EE00FCFA70 /* ProfileTableViewController.m in Sources */,
@@ -770,6 +790,8 @@
 				1881B78D1C003E7A00FCFA70 /* UIView+frame.m in Sources */,
 				1881B72F1C00333300FCFA70 /* main.m in Sources */,
 				180E9D781C00D5D8008888FB /* PopTableViewCell.m in Sources */,
+				188D35071C02FF1C00376A86 /* ComposeButton.m in Sources */,
+				188D35041C02FA2500376A86 /* ComposeButtonModel.m in Sources */,
 				18A390511C01A7CC00F13507 /* NewFeatureController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

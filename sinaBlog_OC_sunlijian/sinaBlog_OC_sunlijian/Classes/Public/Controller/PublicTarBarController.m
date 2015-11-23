@@ -15,7 +15,7 @@
 #import "ProfileTableViewController.h"
 #import "PublicTabBarItem.h"
 #import <objc/runtime.h>
-
+#import "ComposeView.h"
 const void *keyRuntime = @"void *key";
 
 @interface PublicTarBarController ()<PublicTabBarDelegate>
@@ -97,8 +97,9 @@ const void *keyRuntime = @"void *key";
 - (void)tabBar:(UITabBar *)tabBar didSelectPlusButton:(UIButton *)plusButton{
     NSLog(@"-------");
     
+    ComposeView *poseView = [[ComposeView alloc]initWithTarget:self];
     
-    
+    [poseView startAnimation];
     
 }
 

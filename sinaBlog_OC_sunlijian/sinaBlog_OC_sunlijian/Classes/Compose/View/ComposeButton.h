@@ -1,5 +1,5 @@
 //
-//  ComposeView.h
+//  ComposeButton.h
 //  sinaBlog_OC_sunlijian
 //
 //  Created by sunlijian on 15/11/23.
@@ -8,11 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ComposeView : UIView
 
-- (instancetype)initWithTarget:(UIViewController *)controller;
-
-
-- (void)startAnimation;
+#define kComposeButtonW 80
+#define kComposeButtonH 110
+@interface ComposeButton : UIButton
 
 @end
