@@ -32,7 +32,7 @@
     //设置 item
     if (count >= 1) {
         if (count == 1) {
-            title = [self.viewControllers firstObject].title;
+//            title = [self.viewControllers firstObject].title;
         }
         viewController.hidesBottomBarWhenPushed = YES;
         viewController.navigationItem.leftBarButtonItem = [UIBarButtonItem itemWithImageName:@"navigationbar_back_withtext" title:title target:self action:@selector(back)];

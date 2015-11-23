@@ -7,7 +7,7 @@
 //
 
 #import "DiscoverTableViewController.h"
-
+#import "SearchBar.h"
 @interface DiscoverTableViewController ()
 
 @end
@@ -16,13 +16,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
-    
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    //设置导航
+    [self setNav];
 }
+
+
+#pragma mark - 设置导航
+- (void)setNav{
+    SearchBar *searchBar = [SearchBar loadSearchBar];
+    self.navigationItem.titleView = searchBar;
+}
+
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -41,15 +46,7 @@
     return 0;
 }
 
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-    return cell;
-}
-*/
+
 
 /*
 // Override to support conditional editing of the table view.
