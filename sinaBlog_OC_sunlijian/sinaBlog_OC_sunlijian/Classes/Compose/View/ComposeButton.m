@@ -7,7 +7,7 @@
 //
 
 #import "ComposeButton.h"
-
+#import "POP.h"
 @implementation ComposeButton
 
 - (instancetype)initWithFrame:(CGRect)frame{
@@ -37,5 +37,28 @@
     self.titleLabel.height = kComposeButtonH - kComposeButtonW;
     
 }
+
+#pragma mark - 动画效果
+- (void)startAnimWithBeginTime:(double)beginTime type:(kComposeButtonAnimType)type{
+    POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPViewCenter];
+    //判断动画类型
+    CGFloat result = -350;
+    if (type == kComposeButtonAnimTypeDown) {
+        result = 350;
+    }
+    
+    anim.toValue = [NSValue valueWithCGPoint:CGPointMake(self.centerX, self.centerY + result)];
+    //弹性
+    anim.springBounciness = 10;
+    //速度
+    anim.springSpeed = 12;
+    //开始动画时间
+    anim.beginTime = beginTime;
+    //添加
+    [self pop_addAnimation:anim forKey:nil];
+    
+}
+
+
 
 @end

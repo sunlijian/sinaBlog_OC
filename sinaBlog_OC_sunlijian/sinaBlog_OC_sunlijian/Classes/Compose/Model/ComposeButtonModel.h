@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
 @interface ComposeButtonModel : NSObject
 
 @property (nonatomic, copy) NSString *icon;
@@ -18,5 +17,7 @@
 + (instancetype)composeButtonWithDict:(NSDictionary *)dict;
 
 + (NSArray *)composeButtonArray;
+
+
 
 @end

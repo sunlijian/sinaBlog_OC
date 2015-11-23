@@ -30,6 +30,7 @@
 		188D35011C02F99200376A86 /* compose.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188D35001C02F99200376A86 /* compose.plist */; settings = {ASSET_TAGS = (); }; };
 		188D35041C02FA2500376A86 /* ComposeButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35031C02FA2500376A86 /* ComposeButtonModel.m */; settings = {ASSET_TAGS = (); }; };
 		188D35071C02FF1C00376A86 /* ComposeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35061C02FF1C00376A86 /* ComposeButton.m */; settings = {ASSET_TAGS = (); }; };
+		188D350A1C031E3C00376A86 /* ComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35091C031E3C00376A86 /* ComposeController.m */; settings = {ASSET_TAGS = (); }; };
 		18A390461C017B6000F13507 /* OAthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390451C017B6000F13507 /* OAthViewController.m */; };
 		18A390491C01997700F13507 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390481C01997700F13507 /* Account.m */; settings = {ASSET_TAGS = (); }; };
 		18A3904C1C019FCE00F13507 /* AccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3904B1C019FCE00F13507 /* AccountTool.m */; settings = {ASSET_TAGS = (); }; };
@@ -106,6 +107,8 @@
 		188D35031C02FA2500376A86 /* ComposeButtonModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeButtonModel.m; sourceTree = "<group>"; };
 		188D35051C02FF1C00376A86 /* ComposeButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeButton.h; sourceTree = "<group>"; };
 		188D35061C02FF1C00376A86 /* ComposeButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeButton.m; sourceTree = "<group>"; };
+		188D35081C031E3C00376A86 /* ComposeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComposeController.h; sourceTree = "<group>"; };
+		188D35091C031E3C00376A86 /* ComposeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComposeController.m; sourceTree = "<group>"; };
 		18A390441C017B6000F13507 /* OAthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAthViewController.h; sourceTree = "<group>"; };
 		18A390451C017B6000F13507 /* OAthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAthViewController.m; sourceTree = "<group>"; };
 		18A390471C01997700F13507 /* Account.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Account.h; sourceTree = "<group>"; };
@@ -445,6 +448,8 @@
 		188D34F61C02CEA200376A86 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				188D35081C031E3C00376A86 /* ComposeController.h */,
+				188D35091C031E3C00376A86 /* ComposeController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -778,6 +783,7 @@
 				1881B7811C0034EE00FCFA70 /* ProfileTableViewController.m in Sources */,
 				18A3904C1C019FCE00F13507 /* AccountTool.m in Sources */,
 				18CFBC381C00808C00EE5C4A /* TitleButton.m in Sources */,
+				188D350A1C031E3C00376A86 /* ComposeController.m in Sources */,
 				188D34F21C02B9E700376A86 /* SearchBar.m in Sources */,
 				18CFBC311C006E0A00EE5C4A /* UIBarButtonItem+Extension.m in Sources */,
 				18056A061C00912800F83750 /* PopMenuView.m in Sources */,
