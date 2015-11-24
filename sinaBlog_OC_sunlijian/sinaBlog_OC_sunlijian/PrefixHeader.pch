@@ -18,6 +18,9 @@
 #define SCREEN_W [UIScreen mainScreen].bounds.size.width
 #define SCREEN_H [UIScreen mainScreen].bounds.size.height
 
+#define UserDefaults [NSUserDefaults standardUserDefaults]
+
+
 typedef enum {
     kTitleButton = 1001,
     kRightButton,

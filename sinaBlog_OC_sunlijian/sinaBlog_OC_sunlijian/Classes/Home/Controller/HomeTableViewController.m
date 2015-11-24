@@ -10,7 +10,12 @@
 #import "TempTableViewController.h"
 #import "TitleButton.h"
 #import "PopMenuView.h"
-
+#import "AccountTool.h"
+#import "Account.h"
+#import "AFNetworking.h"
+#import "HomeDataTool.h"
+#import "AccountTool.h"
+#import "UserModel.h"
 @interface HomeTableViewController ()
 
 @property (nonatomic, weak)UIButton *currentButton;
@@ -24,7 +29,49 @@
     
     //设置导航
     [self setNav];
+    //获取个人信息
+    [self loadUserInfo];
+    //加载数据
+//    [self loadData];
 }
+
+#pragma mark - 获取个人信息
+- (void)loadUserInfo{
+    [HomeDataTool getUserInfoWithUid:[AccountTool loadAccount].uid success:^(UserModel *user) {
+        //
+        NSString *screen_name = user.screen_name;
+        //保存昵称
+        [UserDefaults setObject:screen_name forKey:@"screen_name"];
+        [UserDefaults synchronize];
+        //给 titleButton 赋值
+        UIButton *titleBtn = (UIButton *)self.navigationItem.titleView;
+        [titleBtn setTitle:screen_name forState:UIControlStateNormal];
+    } failure:^(NSError *error) {
+        //
+        NSLog(@"请求失败: %@", error);
+    }];
+}
+
+
+#pragma mark - 请求数据
+- (void)loadData{
+    //接口
+    NSString *urlString = @"https://api.weibo.com/2/statuses/friends_timeline.json";
+    //参数
+    NSMutableDictionary *params = [NSMutableDictionary dictionary];
+    params[@"access_token"] = [AccountTool loadAccount].access_token;
+    
+    AFHTTPSessionManager *mgr = [AFHTTPSessionManager manager];
+    mgr.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/plain", nil];
+    [mgr GET:urlString parameters:params success:^(NSURLSessionDataTask * _Nonnull task, id  _Nonnull responseObject) {
+        NSLog(@"%@", responseObject);
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        
+    }];
+    
+}
+
+
 #pragma mark - 设置导航
 - (void)setNav{
     //左边
