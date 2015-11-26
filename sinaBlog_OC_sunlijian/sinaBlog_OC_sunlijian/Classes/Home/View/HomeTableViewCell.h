@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class StatusFrameModel;
 @interface HomeTableViewCell : UITableViewCell
+
+@property (nonatomic, strong) StatusFrameModel *statusFrame;
 
 @end

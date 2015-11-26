@@ -23,26 +23,29 @@
 		1881B7871C00350C00FCFA70 /* DiscoverTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7861C00350C00FCFA70 /* DiscoverTableViewController.m */; };
 		1881B78A1C00351B00FCFA70 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B7891C00351B00FCFA70 /* HomeTableViewController.m */; };
 		1881B78D1C003E7A00FCFA70 /* UIView+frame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1881B78C1C003E7A00FCFA70 /* UIView+frame.m */; };
-		188D34F21C02B9E700376A86 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D34F11C02B9E700376A86 /* SearchBar.m */; settings = {ASSET_TAGS = (); }; };
-		188D34F41C02BA5300376A86 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188D34F31C02BA5300376A86 /* SearchView.xib */; settings = {ASSET_TAGS = (); }; };
-		188D34FC1C02CEDE00376A86 /* ComposeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D34FB1C02CEDE00376A86 /* ComposeView.m */; settings = {ASSET_TAGS = (); }; };
-		188D34FF1C02F36800376A86 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D34FE1C02F36800376A86 /* UIImage+ImageEffects.m */; settings = {ASSET_TAGS = (); }; };
-		188D35011C02F99200376A86 /* compose.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188D35001C02F99200376A86 /* compose.plist */; settings = {ASSET_TAGS = (); }; };
-		188D35041C02FA2500376A86 /* ComposeButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35031C02FA2500376A86 /* ComposeButtonModel.m */; settings = {ASSET_TAGS = (); }; };
-		188D35071C02FF1C00376A86 /* ComposeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35061C02FF1C00376A86 /* ComposeButton.m */; settings = {ASSET_TAGS = (); }; };
-		188D350A1C031E3C00376A86 /* ComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35091C031E3C00376A86 /* ComposeController.m */; settings = {ASSET_TAGS = (); }; };
-		188D35121C033C5500376A86 /* HomeDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35111C033C5500376A86 /* HomeDataTool.m */; settings = {ASSET_TAGS = (); }; };
-		188D35151C034A6800376A86 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35141C034A6800376A86 /* UserModel.m */; settings = {ASSET_TAGS = (); }; };
-		188D351A1C03521000376A86 /* BaseDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35191C03521000376A86 /* BaseDataTool.m */; settings = {ASSET_TAGS = (); }; };
-		188D351D1C03550500376A86 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D351C1C03550500376A86 /* HttpTool.m */; settings = {ASSET_TAGS = (); }; };
+		188D34F21C02B9E700376A86 /* SearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D34F11C02B9E700376A86 /* SearchBar.m */; };
+		188D34F41C02BA5300376A86 /* SearchView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188D34F31C02BA5300376A86 /* SearchView.xib */; };
+		188D34FC1C02CEDE00376A86 /* ComposeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D34FB1C02CEDE00376A86 /* ComposeView.m */; };
+		188D34FF1C02F36800376A86 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D34FE1C02F36800376A86 /* UIImage+ImageEffects.m */; };
+		188D35011C02F99200376A86 /* compose.plist in Resources */ = {isa = PBXBuildFile; fileRef = 188D35001C02F99200376A86 /* compose.plist */; };
+		188D35041C02FA2500376A86 /* ComposeButtonModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35031C02FA2500376A86 /* ComposeButtonModel.m */; };
+		188D35071C02FF1C00376A86 /* ComposeButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35061C02FF1C00376A86 /* ComposeButton.m */; };
+		188D350A1C031E3C00376A86 /* ComposeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35091C031E3C00376A86 /* ComposeController.m */; };
+		188D35121C033C5500376A86 /* HomeDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35111C033C5500376A86 /* HomeDataTool.m */; };
+		188D35151C034A6800376A86 /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35141C034A6800376A86 /* UserModel.m */; };
+		188D351A1C03521000376A86 /* BaseDataTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D35191C03521000376A86 /* BaseDataTool.m */; };
+		188D351D1C03550500376A86 /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 188D351C1C03550500376A86 /* HttpTool.m */; };
 		18A390461C017B6000F13507 /* OAthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390451C017B6000F13507 /* OAthViewController.m */; };
-		18A390491C01997700F13507 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390481C01997700F13507 /* Account.m */; settings = {ASSET_TAGS = (); }; };
-		18A3904C1C019FCE00F13507 /* AccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3904B1C019FCE00F13507 /* AccountTool.m */; settings = {ASSET_TAGS = (); }; };
-		18A390511C01A7CC00F13507 /* NewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390501C01A7CC00F13507 /* NewFeatureController.m */; settings = {ASSET_TAGS = (); }; };
-		18BD1AAD1C01BE84007FF45B /* WelcomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1AAC1C01BE84007FF45B /* WelcomController.m */; settings = {ASSET_TAGS = (); }; };
-		18BD1AB11C0203F8007FF45B /* PublicTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1AB01C0203F8007FF45B /* PublicTabBarItem.m */; settings = {ASSET_TAGS = (); }; };
-		18C5A36B1C043C4D0004B231 /* StatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5A36A1C043C4D0004B231 /* StatusModel.m */; settings = {ASSET_TAGS = (); }; };
-		18C5A36E1C0445870004B231 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5A36D1C0445870004B231 /* HomeTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
+		18A390491C01997700F13507 /* Account.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390481C01997700F13507 /* Account.m */; };
+		18A3904C1C019FCE00F13507 /* AccountTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A3904B1C019FCE00F13507 /* AccountTool.m */; };
+		18A390511C01A7CC00F13507 /* NewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390501C01A7CC00F13507 /* NewFeatureController.m */; };
+		18BA692A1C06C71500AE83B7 /* StatusFrameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA69291C06C71500AE83B7 /* StatusFrameModel.m */; };
+		18BA692E1C06CEAC00AE83B7 /* NSString+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA692D1C06CEAC00AE83B7 /* NSString+category.m */; };
+		18BA69311C0718C200AE83B7 /* NSDate+category.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BA69301C0718C200AE83B7 /* NSDate+category.m */; };
+		18BD1AAD1C01BE84007FF45B /* WelcomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1AAC1C01BE84007FF45B /* WelcomController.m */; };
+		18BD1AB11C0203F8007FF45B /* PublicTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1AB01C0203F8007FF45B /* PublicTabBarItem.m */; };
+		18C5A36B1C043C4D0004B231 /* StatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5A36A1C043C4D0004B231 /* StatusModel.m */; };
+		18C5A36E1C0445870004B231 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5A36D1C0445870004B231 /* HomeTableViewCell.m */; };
 		18CFBC311C006E0A00EE5C4A /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC301C006E0A00EE5C4A /* UIBarButtonItem+Extension.m */; };
 		18CFBC351C0073DD00EE5C4A /* TempTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC341C0073DD00EE5C4A /* TempTableViewController.m */; };
 		18CFBC381C00808C00EE5C4A /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC371C00808C00EE5C4A /* TitleButton.m */; };
@@ -131,6 +134,12 @@
 		18A3904B1C019FCE00F13507 /* AccountTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTool.m; sourceTree = "<group>"; };
 		18A3904F1C01A7CC00F13507 /* NewFeatureController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewFeatureController.h; sourceTree = "<group>"; };
 		18A390501C01A7CC00F13507 /* NewFeatureController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewFeatureController.m; sourceTree = "<group>"; };
+		18BA69281C06C71500AE83B7 /* StatusFrameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusFrameModel.h; sourceTree = "<group>"; };
+		18BA69291C06C71500AE83B7 /* StatusFrameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusFrameModel.m; sourceTree = "<group>"; };
+		18BA692C1C06CEAC00AE83B7 /* NSString+category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+category.h"; sourceTree = "<group>"; };
+		18BA692D1C06CEAC00AE83B7 /* NSString+category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+category.m"; sourceTree = "<group>"; };
+		18BA692F1C0718C200AE83B7 /* NSDate+category.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+category.h"; sourceTree = "<group>"; };
+		18BA69301C0718C200AE83B7 /* NSDate+category.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+category.m"; sourceTree = "<group>"; };
 		18BD1AAB1C01BE84007FF45B /* WelcomController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WelcomController.h; sourceTree = "<group>"; };
 		18BD1AAC1C01BE84007FF45B /* WelcomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomController.m; sourceTree = "<group>"; };
 		18BD1AAF1C0203F7007FF45B /* PublicTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTabBarItem.h; sourceTree = "<group>"; };
@@ -317,6 +326,8 @@
 				188D35141C034A6800376A86 /* UserModel.m */,
 				18C5A3691C043C4D0004B231 /* StatusModel.h */,
 				18C5A36A1C043C4D0004B231 /* StatusModel.m */,
+				18BA69281C06C71500AE83B7 /* StatusFrameModel.h */,
+				18BA69291C06C71500AE83B7 /* StatusFrameModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -420,6 +431,10 @@
 				1881B78C1C003E7A00FCFA70 /* UIView+frame.m */,
 				18CFBC2F1C006E0A00EE5C4A /* UIBarButtonItem+Extension.h */,
 				18CFBC301C006E0A00EE5C4A /* UIBarButtonItem+Extension.m */,
+				18BA692C1C06CEAC00AE83B7 /* NSString+category.h */,
+				18BA692D1C06CEAC00AE83B7 /* NSString+category.m */,
+				18BA692F1C0718C200AE83B7 /* NSDate+category.h */,
+				18BA69301C0718C200AE83B7 /* NSDate+category.m */,
 			);
 			path = Categroy;
 			sourceTree = "<group>";
@@ -838,8 +853,10 @@
 				18C5A36E1C0445870004B231 /* HomeTableViewCell.m in Sources */,
 				188D35121C033C5500376A86 /* HomeDataTool.m in Sources */,
 				188D351D1C03550500376A86 /* HttpTool.m in Sources */,
+				18BA69311C0718C200AE83B7 /* NSDate+category.m in Sources */,
 				1881B7841C00350000FCFA70 /* MessageTableViewController.m in Sources */,
 				1881B77B1C0034AF00FCFA70 /* PublicNavController.m in Sources */,
+				18BA692E1C06CEAC00AE83B7 /* NSString+category.m in Sources */,
 				1881B7321C00333300FCFA70 /* AppDelegate.m in Sources */,
 				1881B78A1C00351B00FCFA70 /* HomeTableViewController.m in Sources */,
 				188D34FF1C02F36800376A86 /* UIImage+ImageEffects.m in Sources */,
@@ -852,6 +869,7 @@
 				188D350A1C031E3C00376A86 /* ComposeController.m in Sources */,
 				18C5A36B1C043C4D0004B231 /* StatusModel.m in Sources */,
 				188D34F21C02B9E700376A86 /* SearchBar.m in Sources */,
+				18BA692A1C06C71500AE83B7 /* StatusFrameModel.m in Sources */,
 				18CFBC311C006E0A00EE5C4A /* UIBarButtonItem+Extension.m in Sources */,
 				18056A061C00912800F83750 /* PopMenuView.m in Sources */,
 				1881B7781C00349300FCFA70 /* PublicTarBarController.m in Sources */,

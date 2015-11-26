@@ -7,7 +7,12 @@
 //
 
 #import "UserModel.h"
-
 @implementation UserModel
+
+//是否是会员
+- (void)setMbtype:(NSInteger)mbtype{
+    _mbtype = mbtype;
+    self.isVip = mbtype >= 2;
+}
 
 @end

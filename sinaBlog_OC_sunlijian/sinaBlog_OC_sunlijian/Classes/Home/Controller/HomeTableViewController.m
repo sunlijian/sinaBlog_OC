@@ -19,11 +19,13 @@
 #import "MJExtension.h"
 #import "StatusModel.h"
 #import "HomeTableViewCell.h"
-@interface HomeTableViewController ()<UITableViewDelegate, UITableViewDataSource>
-
+#import "StatusFrameModel.h"
+@interface HomeTableViewController ()
 @property (nonatomic, weak)UIButton *currentButton;
 
 @property (nonatomic, strong)NSMutableArray *statusModels;
+
+@property (nonatomic, strong)NSMutableArray *statusFrameModels;
 
 @property (nonatomic, strong)UIActivityIndicatorView *pullupView;
 
@@ -44,8 +46,6 @@
     
     //加载数据
     [self loadData];
-    self.tableView.delegate = self;
-    self.tableView.dataSource = self;
 }
 
 //#pragma mark - 获取个人信息
@@ -79,14 +79,14 @@
     
     //判断是上拉刷新 还是下拉加载
     if (self.pullupView.isAnimating) {
-        if ([self.statusModels lastObject]) {
-            StatusModel *statusLast = [self.statusModels lastObject];
-            params[@"max_id"] = @(statusLast.id - 1);
+        if ([self.statusFrameModels lastObject]) {
+            StatusFrameModel *statusFrame = [self.statusFrameModels lastObject];
+            params[@"max_id"] = @(statusFrame.status.id - 1);
         }
     }else{
-        if ([self.statusModels firstObject]) {
-            StatusModel *statusFirst = [self.statusModels firstObject];
-            params[@"since_id"] = @(statusFirst.id);
+        if ([self.statusFrameModels firstObject]) {
+            StatusFrameModel *statusFrame = [self.statusFrameModels firstObject];
+            params[@"since_id"] = @(statusFrame.status.id);
         }
     }
     
@@ -100,19 +100,21 @@
         NSMutableArray *tempArray = [NSMutableArray array];
         //遍历数组
         for (NSDictionary *statusDict in statusArray) {
+            //转模型
             StatusModel *status = [[StatusModel alloc]init];
             [status mj_setKeyValues:statusDict];
-            [tempArray addObject:status];
+            //转成 frame 模型
+            StatusFrameModel *statusFrame = [[StatusFrameModel alloc]init];
+            statusFrame.status = status;
+            [tempArray addObject:statusFrame];
         }
         //插入数据
         if (self.pullupView.isAnimating) {
-            [self.statusModels addObjectsFromArray:tempArray];
+            [self.statusFrameModels addObjectsFromArray:tempArray];
         }else{
             NSIndexSet *set = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, tempArray.count)];
-            [self.statusModels insertObjects:tempArray atIndexes:set];
+            [self.statusFrameModels insertObjects:tempArray atIndexes:set];
         }
-        
-        
         //更新UI
         [self.refreshControl endRefreshing];
         [self.pullupView stopAnimating];
@@ -121,38 +123,48 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         [self.pullupView stopAnimating];
         [self.refreshControl endRefreshing];
-        [self.tableView reloadData];
     }];
 }
 
 
 #pragma mark - UITableViewDataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return self.statusModels.count;
+    return self.statusFrameModels.count;
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     HomeTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:home_identifier];
-    StatusModel *status = self.statusModels[indexPath.row];
-    cell.textLabel.text = status.text;
+
+    StatusFrameModel *statusFrame = self.statusFrameModels[indexPath.row];
+    cell.statusFrame = statusFrame;
     //当拉到最后时 加载数据
-    if (indexPath.row == self.statusModels.count - 1 && !self.pullupView.isAnimating) {
+    if (indexPath.row == self.statusFrameModels.count - 1 && !self.pullupView.isAnimating) {
         [self.pullupView startAnimating];
         [self loadData];
     }
     return cell;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100;
+}
+
+
 #pragma mark - 设置 tableView
 static NSString *home_identifier = @"home_identifier";
 - (void)setTableView{
     //注册一个 cell
     [self.tableView registerClass:[HomeTableViewCell class] forCellReuseIdentifier:home_identifier];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+//    self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
     //下拉刷新控制
     self.refreshControl = [[UIRefreshControl alloc]init];
     [self.refreshControl addTarget:self action:@selector(loadData) forControlEvents:UIControlEventValueChanged];
     //上拉刷新
     self.tableView.tableFooterView = self.pullupView;
+
 }
 
 #pragma mark - 设置导航
@@ -211,6 +223,14 @@ static NSString *home_identifier = @"home_identifier";
     }
     return _statusModels;
 }
+- (NSMutableArray *)statusFrameModels{
+    if (!_statusFrameModels) {
+        _statusFrameModels = [NSMutableArray array];
+    }
+    return _statusFrameModels;
+}
+
+
 - (UIActivityIndicatorView *)pullupView{
     if (!_pullupView) {
         _pullupView = [[UIActivityIndicatorView alloc]initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhiteLarge];
