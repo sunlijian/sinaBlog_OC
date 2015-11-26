@@ -19,7 +19,7 @@
     [manager GET:urlString parameters:params success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
         //
         if (success) {
-            NSLog(@"%@", responseObject);
+//            NSLog(@"%@", responseObject);
             success(responseObject);
         }
         

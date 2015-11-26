@@ -26,4 +26,6 @@
     [BaseDataTool getWithUrl:urlStr params:params calzz:[UserModel class] success:success failure:failure];
 }
 
+#pragma mark - 请求数据
+
 @end

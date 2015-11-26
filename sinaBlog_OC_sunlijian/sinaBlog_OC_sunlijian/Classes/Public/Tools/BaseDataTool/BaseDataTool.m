@@ -11,7 +11,7 @@
 #import "MJExtension.h"
 @implementation BaseDataTool
 
-//字典转模型
+//请求个人信息
 + (void)getWithUrl:(NSString *)url params:(NSMutableDictionary *)params calzz:(Class)calzz success:(void (^)(id responseModel))success failure:(void (^)(NSError *error))failure{
     [HttpTool getWithUrl:url params:params success:^(id responseObject) {
         //

@@ -13,4 +13,7 @@
 //请求个人信息
 + (void)getUserInfoWithUid:(NSString *)uid success:(void(^)(UserModel *user))success failure:(void(^)(NSError *error))failure;
 
+//请求数据
+
+
 @end

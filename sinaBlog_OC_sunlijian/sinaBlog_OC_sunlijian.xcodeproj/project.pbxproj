@@ -41,6 +41,8 @@
 		18A390511C01A7CC00F13507 /* NewFeatureController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18A390501C01A7CC00F13507 /* NewFeatureController.m */; settings = {ASSET_TAGS = (); }; };
 		18BD1AAD1C01BE84007FF45B /* WelcomController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1AAC1C01BE84007FF45B /* WelcomController.m */; settings = {ASSET_TAGS = (); }; };
 		18BD1AB11C0203F8007FF45B /* PublicTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD1AB01C0203F8007FF45B /* PublicTabBarItem.m */; settings = {ASSET_TAGS = (); }; };
+		18C5A36B1C043C4D0004B231 /* StatusModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5A36A1C043C4D0004B231 /* StatusModel.m */; settings = {ASSET_TAGS = (); }; };
+		18C5A36E1C0445870004B231 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C5A36D1C0445870004B231 /* HomeTableViewCell.m */; settings = {ASSET_TAGS = (); }; };
 		18CFBC311C006E0A00EE5C4A /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC301C006E0A00EE5C4A /* UIBarButtonItem+Extension.m */; };
 		18CFBC351C0073DD00EE5C4A /* TempTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC341C0073DD00EE5C4A /* TempTableViewController.m */; };
 		18CFBC381C00808C00EE5C4A /* TitleButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 18CFBC371C00808C00EE5C4A /* TitleButton.m */; };
@@ -133,6 +135,10 @@
 		18BD1AAC1C01BE84007FF45B /* WelcomController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WelcomController.m; sourceTree = "<group>"; };
 		18BD1AAF1C0203F7007FF45B /* PublicTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicTabBarItem.h; sourceTree = "<group>"; };
 		18BD1AB01C0203F8007FF45B /* PublicTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicTabBarItem.m; sourceTree = "<group>"; };
+		18C5A3691C043C4D0004B231 /* StatusModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatusModel.h; sourceTree = "<group>"; };
+		18C5A36A1C043C4D0004B231 /* StatusModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatusModel.m; sourceTree = "<group>"; };
+		18C5A36C1C0445870004B231 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		18C5A36D1C0445870004B231 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		18CFBC2E1C00475000EE5C4A /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		18CFBC2F1C006E0A00EE5C4A /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
 		18CFBC301C006E0A00EE5C4A /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
@@ -309,6 +315,8 @@
 			children = (
 				188D35131C034A6800376A86 /* UserModel.h */,
 				188D35141C034A6800376A86 /* UserModel.m */,
+				18C5A3691C043C4D0004B231 /* StatusModel.h */,
+				18C5A36A1C043C4D0004B231 /* StatusModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -318,6 +326,8 @@
 			children = (
 				18CFBC361C00808C00EE5C4A /* TitleButton.h */,
 				18CFBC371C00808C00EE5C4A /* TitleButton.m */,
+				18C5A36C1C0445870004B231 /* HomeTableViewCell.h */,
+				18C5A36D1C0445870004B231 /* HomeTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -825,6 +835,7 @@
 			files = (
 				1881B77E1C0034D400FCFA70 /* PublicTabBar.m in Sources */,
 				188D34FC1C02CEDE00376A86 /* ComposeView.m in Sources */,
+				18C5A36E1C0445870004B231 /* HomeTableViewCell.m in Sources */,
 				188D35121C033C5500376A86 /* HomeDataTool.m in Sources */,
 				188D351D1C03550500376A86 /* HttpTool.m in Sources */,
 				1881B7841C00350000FCFA70 /* MessageTableViewController.m in Sources */,
@@ -839,6 +850,7 @@
 				18A3904C1C019FCE00F13507 /* AccountTool.m in Sources */,
 				18CFBC381C00808C00EE5C4A /* TitleButton.m in Sources */,
 				188D350A1C031E3C00376A86 /* ComposeController.m in Sources */,
+				18C5A36B1C043C4D0004B231 /* StatusModel.m in Sources */,
 				188D34F21C02B9E700376A86 /* SearchBar.m in Sources */,
 				18CFBC311C006E0A00EE5C4A /* UIBarButtonItem+Extension.m in Sources */,
 				18056A061C00912800F83750 /* PopMenuView.m in Sources */,
